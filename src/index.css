@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+        width: 100%;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        list-style: none;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    body {
+        font-family: "Cerebri Sans Pro";
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: "CerebriPro-Regular";
+    src: local("CerebriPro-Regular"),
+        url("./assets/font/cerebri/CerebriSans-Regular.ttf") format(truetype),
+        url("./assets/font/cerebri/CerebriSans-Regular.woff") format(woff),
+        url("./assets/font/cerebri/CerebriSans-Regular.woff2") format(woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CerebriPro-SemiBold";
+    src: local("CerebriPro-SemiBold"),
+        url("./assets/font/cerebri/CerebriSans-SemiBold.ttf") format(truetype),
+        url("./assets/font/cerebri/CerebriSans-SemiBold.woff") format(woff),
+        url("./assets/font/cerebri/CerebriSans-SemiBold.woff2") format(woff2);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CerebriPro-Bold";
+    src: local("CerebriPro-Bold"),
+        url("./assets/font/cerebri/CerebriSans-Bold.ttf") format(truetype),
+        url("./assets/font/cerebri/CerebriSans-Bold.woff") format(woff),
+        url("./assets/font/cerebri/CerebriSans-Bold.woff2") format(woff2);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cerebri-BoldItalic";
+    src: local("CerebriPro-BoldItalic"),
+        url("./assets/font/cerebri/CerebriSans-BoldItalic.ttf") format(truetype),
+        url("./assets/font/cerebri/CerebriSans-BoldItalic.woff") format(woff),
+        url("./assets/font/cerebri/CerebriSans-BoldItalic.woff2") format(woff2);
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CerebriPro-ExtraBold";
+    src: local("CerebriPro-ExtraBold"),
+        url("./assets/font/cerebri/CerebriSans-ExtraBold.ttf") format(truetype),
+        url("./assets/font/cerebri/CerebriSans-ExtraBold.woff") format(woff),
+        url("./assets/font/cerebri/CerebriSans-ExtraBold.woff2") format(woff2);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CerebriPro-ExtraBoldItalic";
+    src: local("CerebriPro-ExtraBoldItalic"),
+        url("./assets/font/cerebri/CerebriSans-ExtraBoldItalic.ttf")
+            format(truetype),
+            url("./assets/font/cerebri/CerebriSans-ExtraBoldItalic.woff") format(woff),
+            url("./assets/font/cerebri/CerebriSans-ExtraBoldItalic.woff2") format(woff2);
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CerebriPro-Heavy";
+    src: local("CerebriPro-Heavy"),
+        url("./assets/font/cerebri/CerebriSans-Heavy.ttf") format(truetype),
+        url("./assets/font/cerebri/CerebriSans-Heavy.woff") format(woff),
+        url("./assets/font/cerebri/CerebriSans-Heavy.woff2") format(woff2);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CeraPro-Black";
+    src: local("CeraPro-Black"),
+        url("./assets/font/CeraPro/CeraPro-Black.ttf") format(truetype),
+        url("./assets/font/CeraPro/CeraPro-Black.woff") format(woff);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CeraPro-Bold";
+    src: local("CeraPro-Bold"),
+        url("./assets/font/CeraPro/CeraPro-Bold.ttf") format(truetype), 
+        url("./assets/font/CeraPro/CeraPro-Bold.woff") format(woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "CerebriPro-Medium";
+    src: local("CerebriPro-Medium"),
+        url("./assets/font/cerebri/CerebriSans-Medium.ttf") format(truetype),
+        url("../assets/font/cerebri/CerebriSans-Medium.woff2") format(woff2),
+        url("./assets/font/cerebri/CerebriSans-Medium.woff") format(woff);
+    font-weight: 500;
+    font-style: normal;
+}
