@@ -39,7 +39,7 @@ function MobilePlans() {
     ];
     return (
         <div className="flex flex-col items-center justify-center">
-            <div className="flex justify-center gap-4 text-sm font-bold tems-center text-primary font-Cerebri-Regular whitespace-nowrap">
+            <div className="flex justify-center gap-4 text-sm tems-center text-primary font-Cerebri-Bold whitespace-nowrap">
                 <div>Basic</div>
                 <div className="relative flex flex-col items-center justify-center overflow-hidden">
                     <div className="flex">

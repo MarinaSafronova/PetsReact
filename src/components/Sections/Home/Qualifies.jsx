@@ -1,8 +1,6 @@
 import QualifiesImage from "../../../assets/image.png";
 import Icon from "../../../assets/icons/guard.svg";
 import ButtonLink from "../../Button/ButtonLink";
-import YesIcon from "../../../assets/icons/check-green.svg";
-
 import IconCheck from "../../../assets/icons/yellow-check.svg";
 
 const leftConditions = [
@@ -44,24 +42,18 @@ function Qualifies() {
                         </div>
                         <div className="flex flex-col rounded-none lg:max-w-[474px]">
                             <div className="w-full py-5 pl-8 pr-16 bg-white shadow-card rounded-xl">
-                                <div className="flex lg:gap-5 max-md:flex-col">
+                                <div className="flex flex-col lg:gap-5 md:flex-row">
                                     <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                                         {leftConditions.map(
                                             (condition, index) => (
                                                 <div
-                                                    className="flex items-center gap-2.5 mb-1"
+                                                    className="flex items-center gap-2.5 lg:mb-1"
                                                     key={index}
                                                 >
                                                     <img
                                                         loading="lazy"
                                                         src={IconCheck}
-                                                        className="object-contain aspect-[1.73] w-[19px] hidden md:block"
-                                                        alt=""
-                                                    />
-                                                    <img
-                                                        loading="lazy"
-                                                        src={YesIcon}
-                                                        className="object-contain aspect-[1.73] w-[19px] md:hidden"
+                                                        className="object-contain aspect-[1.73] w-[19px]"
                                                         alt=""
                                                     />
                                                     <span className="text-s md:text-sm leading-[33px] text-brown font-Cerebri-Medium">
@@ -71,23 +63,17 @@ function Qualifies() {
                                             )
                                         )}
                                     </div>
-                                    <div className="flex flex-col w-6/12 ml-5 max-md:ml-0 max-md:w-full">
+                                    <div className="flex flex-col w-6/12 lg:ml-5 max-md:ml-0 max-md:w-full">
                                         {rightConditions.map(
                                             (condition, index) => (
                                                 <div
-                                                    className="flex items-center gap-2.5 mb-1"
+                                                    className="flex items-center gap-2.5 lg:mb-1"
                                                     key={index}
                                                 >
                                                     <img
                                                         loading="lazy"
                                                         src={IconCheck}
-                                                        className="object-contain aspect-[1.73] w-[19px] hidden md:block"
-                                                        alt=""
-                                                    />
-                                                    <img
-                                                        loading="lazy"
-                                                        src={YesIcon}
-                                                        className="object-contain aspect-[1.73] w-[19px] md:hidden"
+                                                        className="object-contain aspect-[1.73] w-[19px]"
                                                         alt=""
                                                     />
 
@@ -127,6 +113,7 @@ function Qualifies() {
                             <ButtonLink
                                 link="Check Your Eligibility Now"
                                 color="text-dark"
+                                to="/checkout/start"
                             />
                         </div>
                     </div>

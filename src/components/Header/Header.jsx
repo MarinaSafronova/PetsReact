@@ -1,24 +1,31 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router";
+import { Link, NavLink, useLocation } from "react-router";
 import Logo from "../../assets/logo/HepfulPets.svg";
 import ButtonGetStart from "../Button/ButtonGetStart";
 import Decor from "../../assets/icons/menu-decor.svg";
 function Header() {
     // State to manage the navbar's visibility
     const [nav, setNav] = useState(false);
+    const { pathname } = useLocation();
 
-    const [scrolltopdata, setscrolltopdata] = useState('');
-
+    const [scrolltopdata, setscrolltopdata] = useState("");
 
     useEffect(() => {
-        window.addEventListener('scroll', () => {
+        window.addEventListener("scroll", () => {
             if (window.scrollY < 15) {
-                setscrolltopdata('');
+                setscrolltopdata("");
             } else {
-                setscrolltopdata('shadow-md');
+                setscrolltopdata("shadow-md");
             }
         });
-    }, [])
+    }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [pathname]);
+
+    
+    
     // Toggle function to handle the navbar's display
     const handleNav = () => {
         setNav(!nav);
@@ -31,14 +38,16 @@ function Header() {
 
     // Array containing navigation items
     const navItems = [
-        { id: 1, text: "Home", to: "Home" },
-        { id: 2, text: "ESA Laws", to: "ESA" },
-        { id: 3, text: "FAQs", to: "FAQs" },
-        { id: 4, text: "About", to: "About" },
+        { id: 1, text: "Home", to: "/" },
+        { id: 2, text: "ESA Laws", to: "/laws" },
+        { id: 3, text: "FAQs", to: "/FAQs" },
+        { id: 4, text: "About", to: "/about" },
         { id: 5, text: "Contact Us", to: "Contact Us" },
     ];
     return (
-        <header className={`flex items-center min-h-[72px] py-3 ${scrolltopdata} lg:py-4 z-50 bg-dark-blue lg:min-h-[102px] lg:px-2 fixed top-0 left-0 right-0`}>
+        <header
+            className={`flex items-center min-h-[72px] py-3 ${scrolltopdata} lg:py-4 z-50 bg-dark-blue lg:min-h-[102px] lg:px-2 fixed top-0 left-0 right-0`}
+        >
             <div className="flex items-center justify-between w-full gap-2 px-5 mx-auto max-w-7xl">
                 {/* Logo */}
                 <Link to="/">
@@ -49,18 +58,20 @@ function Header() {
                         className="w-full max-w-[140px] xl:max-w-[223px]"
                     />
                 </Link>
-
-                {/* Desktop Navigation */}
-                <ul className="hidden md:flex">
-                    {navItems.map((item) => (
-                        <li
-                            key={item.id}
-                            className="m-2 font-sans text-lg font-semibold duration-300 cursor-pointer text-nowrap text-dark hover:text-primary"
-                        >
-                            {item.text}
-                        </li>
-                    ))}
-                </ul>
+                <nav>
+                    {/* Desktop Navigation */}
+                    <ul className="hidden md:flex">
+                        {navItems.map((item) => (
+                            <NavLink
+                                key={item.id}
+                                to={item.to}
+                                className="m-2 font-sans text-lg font-semibold duration-300 cursor-pointer text-nowrap text-dark hover:text-secondary"
+                            >
+                                {item.text}
+                            </NavLink>
+                        ))}
+                    </ul>
+                </nav>
 
                 <div className="flex items-center gap-8">
                     <ButtonGetStart />
@@ -123,27 +134,30 @@ function Header() {
                     }
                 >
                     <div className="flex flex-col gap-10">
-                        <ul>
-                            {/* Mobile Logo */}
+                        <nav>
+                            <ul>
+                                {/* Mobile Logo */}
 
-                            {/* Mobile Navigation Items */}
-                            {navItems.map((item) => (
-                                <li
-                                    key={item.id}
-                                    className="p-3 border-b border-white tr3ansition-all hover:border-accent"
-                                >
-                                    <Link
-                                        to={item.to}
-                                        className="font-sans text-xl font-normal text-white duration-300 cursor-pointer text-ellipsis hover:text-accent"
+                                {/* Mobile Navigation Items */}
+                                {navItems.map((item) => (
+                                    <li
+                                        key={item.id}
+                                        className="p-3 border-b border-white tr3ansition-all hover:border-accent"
                                     >
-                                        {item.text}{" "}
-                                        <span className="inline-block ml-1">
-                                            {">"}
-                                        </span>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
+                                        <NavLink
+                                            to={item.to}
+                                            onClick={() => handleNav()}
+                                            className="font-sans text-xl font-normal text-white duration-300 cursor-pointer text-ellipsis hover:text-accent"
+                                        >
+                                            {item.text}{" "}
+                                            <span className="inline-block ml-1">
+                                                {">"}
+                                            </span>
+                                        </NavLink>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
                         <div className="flex items-center justify-between gap-4 py-4">
                             <img
                                 src={Decor}

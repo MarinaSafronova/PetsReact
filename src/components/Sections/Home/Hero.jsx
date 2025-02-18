@@ -15,7 +15,7 @@ const rightConditions = [
 function Hero() {
     return (
         <div className="w-full relative pt-[100px] md:pb-5 lg:pb-20 lg:pt-[180px] md:bg-[url('assets/hero.png')] md:bg-no-repeat  md:xl:bg-[position:30%_80%]  md:bg-contain">
-            <div className="w-full px-5 mx-auto max-w-7xl">
+            <div className="relative w-full px-5 mx-auto max-w-7xl">
                 <div className="flex">
                     <div className="max-w-[730px] items-start flex flex-col gap-6 lg:gap-12 relative z-10">
                         <div className="flex flex-col gap-3 lg:gap-4">
@@ -43,7 +43,7 @@ function Hero() {
                                     Professionals.
                                 </span>
                             </h1>
-                            <div className="flex relative z-10 flex-col rounded-none max-w-[480px] w-full">
+                            <div className="flex relative z-10 flex-col rounded-none max-w-[506px] w-full">
                                 <div className="flex flex-col w-full">
                                     <div className="flex flex-col">
                                         {rightConditions.map(
@@ -58,7 +58,7 @@ function Hero() {
                                                         className="object-contain aspect-[1.73] w-[20px] h-[20px]"
                                                         alt=""
                                                     />
-                                                    <span className="text-[14px] leading-7 mobile:text-s md:text-base md:leading-[33px] Cerebri-SemiBold text-brown font-Cerebri-Medium">
+                                                    <span className="text-s leading-[30px] md:text-sm md:leading-[34px]  text-brown font-Cerebri-Medium md:Cerebri-SemiBold">
                                                         {condition}
                                                     </span>
                                                 </div>
@@ -71,9 +71,10 @@ function Hero() {
                         <ButtonLink
                             link="Get Your ESA Letter Now "
                             color="text-primary"
+                            to="/checkout/start"
                         />
                         <div className="flex flex-col gap-2 md:gap-6 md:items-center md:flex-row">
-                            <p className="text-base uppercase tracking-[1.44px] text-brown">
+                            <p className="text-base font-proxima uppercase tracking-[1.44px] text-brown">
                                 AS SEEN IN
                             </p>
                             <img
@@ -85,12 +86,13 @@ function Hero() {
                         </div>
                     </div>
                 </div>
+                <img
+                    src={HeroImg}
+                    alt=""
+                    className="hidden md:block md:absolute  md:right-[-140px] md:bottom-[-30px]  lg:right-[-200px] lg:bottom-[-127px]"
+                />
             </div>
-            <img
-                src={HeroImg}
-                alt=""
-                className="hidden md:block md:absolute  md:right-[-80px] md:bottom-[-30px] lg:right-0 lg:bottom-[-70px]"
-            />
+
             <img
                 src={HeroMobile}
                 alt=""

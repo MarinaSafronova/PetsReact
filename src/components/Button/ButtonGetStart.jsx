@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const ButtonGetStart = () => {
     return (
-        <Link to="/">
+        <Link to="/checkout/start">
             <div className="flex max-w-[150px] lg:max-w-[196px] pl-4 min-h-[40px] lg:min-h-[54px] w-full py-1.5 lg:pl-[24px] group items-center transition-all group-hover:shadow-lg bg-accent rounded-[45px] relative pr-[83px]">
                 <div className="my-auto font-sans font-bold text-left text-s lg:text-sm text-nowrap text-dark">
                     Get Started

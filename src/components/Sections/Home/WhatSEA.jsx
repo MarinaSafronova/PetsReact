@@ -44,7 +44,7 @@ function WhatSEA() {
                             </div>
                         </div>
                     </div>
-                    <div className="max-w-[720px]  w-full relative pb-[400px] sm:pb-[450px] md:pb-[580px] lg:pb-[300px] mx-auto">
+                    <div className="max-w-[720px]  w-full relative lg:pb-[300px] mx-auto">
                         <div className="relative">
                         <div className="relative z-10 flex justify-between w-full gap-2 mb-3 lg:mb-6 lg:gap-10">
                             <div className="flex items-center gap-2 lg:gap-4 w-full px-2 py-2 lg:py-5 text-s lg:text-lg bg-white shadow-2xl max-w-[50%] lg:max-w-[268px] text-brown rounded-xl ">
@@ -133,7 +133,7 @@ function WhatSEA() {
                         <img
                             src={Woman}
                             alt=""
-                            className="absolute z-[2] bottom-0  translate-x-[-50%] left-[50%] md:right-20 "
+                            className="mx-auto max-w-[550px] lg:absolute z-[2] bottom-0 w-full lg:w-[inherit] lg:translate-x-[-50%] left-[50%] md:right-20 "
                         />
                     </div>
                 </div>

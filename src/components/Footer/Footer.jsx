@@ -8,7 +8,7 @@ import { Link } from "react-router";
 
 function Footer() {
     return (
-        <footer className="w-full px-5 mt-1">
+        <footer className="w-full px-5 bg-dark-blue">
             <div className="w-full px-5 md:px-24 pt-6 lg:pt-16 mx-auto max-w-[1420px] bg-primary rounded-t-[45px] pb-10">
                 <div className="flex flex-col gap-24">
                     <div className="grid items-start lg:gap-4 lg:justify-between gap-y-10 gap-x-8 grid-areas-footer">

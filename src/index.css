@@ -25,6 +25,14 @@
     }
 }
 
+@layer utilities {
+    .active-tab {
+        border-radius: 22px;
+        color: #5D6FFB;
+        background: rgba(93, 111, 251, 0.12);
+    }
+  }
+
 @font-face {
     font-family: "CerebriPro-Regular";
     src: local("CerebriPro-Regular"),
@@ -124,3 +132,44 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Proxima";
+    src: local("Proxima"),
+        url("../assets/font/Proxima/ProximaNova-Regular.woff2") format(woff2),
+        url("./assets/font/Proxima/ProximaNova-Regular.woff") format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Nunito";
+    src: local("Nunito"),
+        url("../assets/font/Nunito/Nunito-Regular.woff2") format(woff2),
+        url("../assets/font/Nunito/Nunito-Regular.ttf") format(truetype),
+        url("./assets/font/Nunito/Nunito-Regular.woff") format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: local("Satoshi"),
+        url("../assets/font/Satoshi/Satoshi-Regular.woff2") format(woff2),
+        url("../assets/font/Satoshi/Satoshi-Regular.ttf") format(truetype),
+        url("./assets/font/Satoshi/Satoshi-Regular.woff") format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+nav a.active {
+    color: #FFC24F;
+}
+
+@media(min-width: 768px) {
+     nav a.active{
+        color: #24B2BC;
+    }
+}   

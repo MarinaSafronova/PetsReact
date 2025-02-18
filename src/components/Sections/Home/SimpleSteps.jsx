@@ -15,7 +15,7 @@ function SimpleSteps() {
                     loading="lazy"
                     src={Arrow}
                     alt=""
-                    className="object-contain aspect-[0.19] w-[13px] absolute top-[-90px]"
+                    className="object-contain aspect-[0.19] w-[13px] absolute top-[-95px]"
                 />
                 <div className="relative flex justify-center w-full lg:items-center">
                     <div className="flex items-center justify-center">
@@ -50,7 +50,7 @@ function SimpleSteps() {
                                 </div>
                             </div>
                             <div className="flex flex-col text-left lg:text-center max-w-[50%] lg:max-w-[100%]">
-                                <h2 className="mt-6 text-xl leading-[30px] lg:leading-[33px] lg:text-2xl font-Cerebri-ExtraBold lg:max-w-[175px] lg:mx-auto">
+                                <h2 className="lg:mt-6 text-xl leading-[30px] lg:leading-[33px] lg:text-2xl font-Cerebri-ExtraBold lg:max-w-[175px] lg:mx-auto">
                                     Answer a Few Questions
                                 </h2>
                                 <p className="text-base lg:mt-6 font-Cerebri-Regular lg:text-22 leading-[25px] lg:leading-[33px] ">
@@ -95,7 +95,7 @@ function SimpleSteps() {
                             </div>
 
                             <div className="flex flex-col text-left lg:text-center max-w-[50%] lg:max-w-[100%]">
-                                <h2 className="mt-6 text-xl lg:text-2xl font-Cerebri-ExtraBold lg:max-w-[275px] lg:mx-auto leading-[30px] lg:leading-[33px]">
+                                <h2 className="lg:mt-6 text-xl lg:text-2xl font-Cerebri-ExtraBold lg:max-w-[275px] lg:mx-auto leading-[30px] lg:leading-[33px]">
                                     Receive Your ESA Letter Instantly
                                 </h2>
                                 <p className="text-base lg:mt-6 font-Cerebri-Regular lg:text-22 leading-[25px] lg:leading-[33px] ">

@@ -95,7 +95,7 @@ function Trust() {
                     </div>
                 </div>
                 <div className="flex items-center justify-center pt-16">
-                    <ButtonLink link="Get Your ESA Letter Now " color="text-primary"   />
+                    <ButtonLink link="Get Your ESA Letter Now " color="text-primary" to="/checkout/start"  />
                 </div>
             </div>
         </div>

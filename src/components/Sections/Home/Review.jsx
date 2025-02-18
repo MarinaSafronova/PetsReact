@@ -3,6 +3,7 @@ import StarsYellow from "../../../assets/icons/star-y.svg";
 import TitleBefore from "../../../assets/trust-before.svg";
 import TitleAfter from "../../../assets/trust-after.svg";
 import SlideImg from "../../../assets/slide1.png";
+import Arrow from "../../../assets/arrow.svg";
 import SlideImg2 from "../../../assets/slide2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -14,8 +15,14 @@ import "swiper/css/navigation";
 
 function Reviews() {
     return (
-        <div className="py-10 lg:py-20 bg-dark-blue ">
-            <div className="w-full px-0 mx-auto md:px-10 max-w-7xl">
+        <div className="pb-10 pt-14 lg:pb-20 bg-dark-blue">
+            <div className="relative w-full px-0 mx-auto x-col ite md:px-10 max-w-7xl">
+                <img
+                    loading="lazy"
+                    src={Arrow}
+                    alt=""
+                    className="object-contain aspect-[0.19] w-[13px] absolute top-[-90px] left-[50%] z-20 text-center"
+                />
                 <div className="flex flex-col items-center justify-between gap-3">
                     <div className="relative flex justify-center w-full lg:items-center">
                         <div className="flex items-center justify-center">
