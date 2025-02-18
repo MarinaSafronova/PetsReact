@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo/HepfulPetsWhite.svg";
+import Logo from "../../assets/logo/HelpfulPetsLogo-inverted_640px.svg";
 import Abc from "../../assets/icons/abc.png";
 import Cbs from "../../assets/icons/cbs.png";
 import Honest from "../../assets/icons/honest.jpg";
@@ -17,7 +17,7 @@ function Footer() {
                                 <img
                                     src={Logo}
                                     alt="HepfulPets"
-                                    className="w-[223px]"
+                                    className="w-[240px]"
                                 />
                             </Link>
                         </div>

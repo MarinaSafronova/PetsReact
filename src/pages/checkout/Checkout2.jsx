@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 import TitleBefore from "../../assets/trust-before.svg";
 import TitleAfter from "../../assets/trust-after.svg";
-import Logo from "../../assets/logo/HepfulPets.svg";
+import Logo from "../../assets/logo/HelpfulPetsLogo_640px.svg";
 
 function Checkout2() {
     const [selectedOption, setSelectedOption] = useState("");

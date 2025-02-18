@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { useState } from "react";
 import TitleBefore from "../../assets/trust-before.svg";
 import TitleAfter from "../../assets/trust-after.svg";
-import Logo from "../../assets/logo/HepfulPets.svg";
+import Logo from "../../assets/logo/HelpfulPetsLogo_640px.svg";
 import ButtonNext from "../../components/Button/ButtonNext";
 
 function Checkout3() {

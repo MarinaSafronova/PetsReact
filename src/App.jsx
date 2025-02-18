@@ -15,6 +15,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="laws" element={<EsaLaws />} />
+                <Route path="faq" element={<EsaLaws />} />
+                <Route patg="contact" element={<EsaLaws />} />
                 <Route path="laws/post/:id" element={<Post />} />
                 <Route path="/checkout/start" element={<CheckoutStart />} />
                 <Route path="/checkout2" element={<Checkout2 />} />

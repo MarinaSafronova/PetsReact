@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router";
-import Logo from "../../assets/logo/HepfulPets.svg";
+import Logo from "../../assets/logo/HelpfulPetsLogo_640px.svg";
 import ButtonGetStart from "../Button/ButtonGetStart";
 import Decor from "../../assets/icons/menu-decor.svg";
 function Header() {
@@ -42,7 +42,7 @@ function Header() {
         { id: 2, text: "ESA Laws", to: "/laws" },
         { id: 3, text: "FAQs", to: "/FAQs" },
         { id: 4, text: "About", to: "/about" },
-        { id: 5, text: "Contact Us", to: "Contact Us" },
+        { id: 5, text: "Contact Us", to: "contact" },
     ];
     return (
         <header
