@@ -7,32 +7,36 @@ import ButtonStart from "../../Button/ButtonStart";
 
 function GetStart() {
     return (
-        <div className="relative flex flex-col pb-[310px] lg:pb-1 w-full pt-20 lg:pt-20 bg-secondary bg-[url(assets/clouds.svg)] bg-no-repeat  bg-[center_top_1rem] ">
+        <div className="relative flex flex-col pb-[310px] lg:pb-1 w-full pt-14 lg:pt-14 bg-secondary bg-[url(assets/clouds.svg)] bg-no-repeat  bg-[center_top_1rem] ">
             <div className="relative z-10 flex flex-col items-center w-full px-5 pb-16 mx-auto gap-7 max-w-7xl">
-                <div className="relative flex justify-center w-full lg:items-center">
+                <div className="relative flex justify-center w-full gap-10 ">
                     <div className="flex items-center justify-center">
                         <img
                             src={TitleBefore}
-                            className="absolute left-0 max-w-[140px] lg:max-w-full"
+                            className="max-w-[140px] lg:max-w-full absolute top-0 lg:top-[inherit] left-0 lg:left-[inherit] lg:relative"
                         />
                     </div>
-                    <h2 className="flex flex-col items-center justify-center  text-5xl font-bold leading-[55px] absolute top-[20px] translate-x-[-50%] left-[50%] lg:top-0 lg:relative w-full min-w-[366px] lg:text-large font-sans text-center text-white max-w-96 lg:max-w-[100%]">
+                    <span className="max-w-[684px] text-5xl font-bold leading-[55px] top-[40px] lg:top-0  relative  lg:text-large font-sans text-center text-white ">
                         Ready to Get Started?
-                        <span className="bg-accent w-[34px] h-[2px] flex items-center"></span>
-                    </h2>
+                        <span className="bg-accent w-[34px] h-[2px] flex items-center mx-auto mt-3 lg:mt-1"></span>
+                    </span>
                     <div className="flex items-center justify-center">
                         <img
                             src={TitleAfter}
-                            className="absolute right-0 max-w-[140px] lg:max-w-full"
+                            className="max-w-[140px] lg:max-w-full absolute right-0 top-0 lg:top-[inherit] lg:right-[inherit] lg:relative"
                         />
                     </div>
                 </div>
-                <div className="flex flex-col items-center w-full  gap-7 mt-[120px] lg:mt-0">
+                <div className="flex flex-col items-center w-full mt-10 gap-7 lg:mt-0">
                     <p className="mt-2 text-3xl text-center text-white font-Cerebri-Regular">
                         Get your ESA Letter Today
                     </p>
                     <div className="flex flex-col min-w-[365px] items-center justify-center text-[#222D3F]">
-                        <ButtonStart link="Get Started" color="text-dark" to="/checkout/start" />
+                        <ButtonStart
+                            link="Get Started"
+                            color="text-dark"
+                            to="/checkout/start"
+                        />
                     </div>
                 </div>
                 <img

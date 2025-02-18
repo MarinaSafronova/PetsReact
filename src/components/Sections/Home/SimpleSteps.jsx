@@ -17,24 +17,24 @@ function SimpleSteps() {
                     alt=""
                     className="object-contain aspect-[0.19] w-[13px] absolute top-[-95px]"
                 />
-                <div className="relative flex justify-center w-full lg:items-center">
+                <div className="relative flex justify-center w-full gap-10 lg:items-start">
                     <div className="flex items-center justify-center">
                         <img
                             src={TitleBefore}
-                            className="absolute left-0 max-w-[140px] lg:max-w-full"
+                            className="max-w-[140px] lg:max-w-full absolute top-0 lg:top-[inherit] left-0 lg:left-[inherit] lg:relative"
                         />
                     </div>
-                    <h2 className="text-3xl absolute top-[60px] leading-[42px] translate-x-[-50%] left-[50%] lg:top-0 lg:relative w-full min-w-[366px] lg:text-4xl font-CeraPro-Black text-center text-white max-w-96 lg:max-w-[100%]">
+                    <span className=" font-bold text-3xl leading-[42px] top-[40px] lg:top-[-15px]  relative  lg:text-4xl font-sans text-center text-white ">
                         Get Your ESA Letter in 3 Simple Steps
-                    </h2>
+                    </span>
                     <div className="flex items-center justify-center">
                         <img
                             src={TitleAfter}
-                            className="absolute right-0 max-w-[140px] lg:max-w-full"
+                            className="max-w-[140px] lg:max-w-full absolute right-0 top-0 lg:top-[inherit] lg:right-[inherit] lg:relative"
                         />
                     </div>
                 </div>
-                <div className="relative flex flex-col justify-between w-full gap-5 mt-[200px] lg:mt-14 lg:flex-row">
+                <div className="relative flex flex-col justify-between w-full gap-5 mt-16 lg:mt-14 lg:flex-row">
                     <div className="flex flex-col relative w-full lg:max-w-[307px] lg:after:content-line lg:after:absolute lg:after:top-[33%] lg:after:left-[67%] lg:after:w-[356px] lg:after:h-[56px] lg:after:bg-no-repeat]">
                         <div className="flex flex-row items-start justify-center gap-10 mt-3 leading-8 text-center text-white lg:items-center lg:gap-0 lg:flex-col grow">
                             <div className="min-h-[126px] flex justify-center flex-col items-center relative z-10">

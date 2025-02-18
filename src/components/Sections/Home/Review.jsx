@@ -23,15 +23,17 @@ function Reviews() {
                     alt=""
                     className="object-contain aspect-[0.19] w-[13px] absolute top-[-90px] left-[50%] z-20 text-center"
                 />
+                
                 <div className="flex flex-col items-center justify-between gap-3">
-                    <div className="relative flex justify-center w-full lg:items-center">
+                    
+                    <div className="relative flex justify-center w-full gap-4">
                         <div className="flex items-center justify-center">
                             <img
                                 src={TitleBefore}
-                                className="absolute left-0 max-w-[140px] lg:max-w-full"
+                                className="max-w-[140px] lg:max-w-full absolute top-0 lg:top-[inherit] left-0 lg:left-[inherit] lg:relative"
                             />
                         </div>
-                        <div className="px-4 md:px-0 flex flex-col items-center justify-center gap-4 lg:gap-2  absolute top-[20px] translate-x-[-50%] left-[50%] lg:top-0 lg:relative w-full min-w-[366px]  text-center lg:max-w-[100%]">
+                        <div className="max-w-[690px] px-4 md:px-0 flex flex-col items-center justify-center gap-4 lg:gap-2  top-[40px] lg:top-[-4px]  relative w-full min-w-[366px]  text-center ">
                             <div className="flex flex-col items-center gap-2 text-center md:flex-row">
                                 <img
                                     src={Stars}
@@ -54,12 +56,12 @@ function Reviews() {
                         <div className="flex items-center justify-center">
                             <img
                                 src={TitleAfter}
-                                className="absolute right-0 max-w-[140px] lg:max-w-full"
+                                className="max-w-[140px] lg:max-w-full absolute right-0 top-0 lg:top-[inherit] lg:right-[inherit] lg:relative"
                             />
                         </div>
                     </div>
                 </div>
-                <div className="mt-[290px] lg:mt-10 relative">
+                <div className="relative mt-20 lg:mt-10">
                     <button className="absolute bottom-20 md:top-[50%] transition-all hover:shadow-md left-5 md:bottom-[inherit] md:translate-y-[-50%] md:left-[-30px] arrow-left-review max-w-[42px] h-[42px] w-full lg:max-w-[66px] lg:h-[66px] rounded-full z-10">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

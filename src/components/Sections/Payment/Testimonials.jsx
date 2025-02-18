@@ -17,7 +17,7 @@ function Testimonials() {
     ];
     return (
         <div>
-            <div className="hidden w-full md:flex">
+            <div className="hidden w-full md:flex md:justify-center">
                 <div className="max-w-[506px] w-full pt-7 px-8 border border-[#EAEAEA] text-white rounded-[20px]">
                     <div className="relative flex flex-col gap-5 pb-16 border-b border-white border-dashed">
                         <svg

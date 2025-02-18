@@ -63,15 +63,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Cerebri-BoldItalic";
-    src: local("CerebriPro-BoldItalic"),
-        url("./assets/font/cerebri/CerebriSans-BoldItalic.ttf") format(truetype),
-        url("./assets/font/cerebri/CerebriSans-BoldItalic.woff") format(woff),
-        url("./assets/font/cerebri/CerebriSans-BoldItalic.woff2") format(woff2);
-    font-weight: 700;
-    font-style: italic;
-}
 
 @font-face {
     font-family: "CerebriPro-ExtraBold";
@@ -83,16 +74,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "CerebriPro-ExtraBoldItalic";
-    src: local("CerebriPro-ExtraBoldItalic"),
-        url("./assets/font/cerebri/CerebriSans-ExtraBoldItalic.ttf")
-            format(truetype),
-            url("./assets/font/cerebri/CerebriSans-ExtraBoldItalic.woff") format(woff),
-            url("./assets/font/cerebri/CerebriSans-ExtraBoldItalic.woff2") format(woff2);
-    font-weight: 800;
-    font-style: italic;
-}
 
 @font-face {
     font-family: "CerebriPro-Heavy";

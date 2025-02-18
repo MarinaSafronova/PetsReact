@@ -69,7 +69,7 @@ function CheckoutStart() {
                             <div className="flex items-center justify-between w-full gap-2">
                                 <div className="flex gap-2">
                                     <div className="flex items-center justify-center  text-13 font-Cerebri-SemiBold leading-3 text-white whitespace-nowrap bg-primary rounded-full h-[26px] w-[26px]">
-                                        1
+                                        <span>1</span>
                                     </div>
                                     <div className="leading-9 text-s font-Cerebri-Bold text-primary basis-auto">
                                         You are 20% closer

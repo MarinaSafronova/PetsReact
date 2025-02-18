@@ -30,7 +30,7 @@ function Choose() {
                 />
                 <div className="relative mt-[-50px] w-full">
                     <div className="flex flex-col items-stretch justify-center w-full gap-4 mb-4 md:flex-row">
-                        <div className="flex items-center justify-start gap-5 px-4 py-4 bg-white max-w-[572px] w-full rounded-xl shadow-choose-card">
+                        <div className="flex items-center justify-start gap-5 px-4 py-4 bg-white md:max-w-[572px] w-full rounded-xl shadow-choose-card">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="68"
@@ -67,7 +67,7 @@ function Choose() {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex items-center justify-start gap-5 px-4 py-4 bg-white max-w-[572px] w-full rounded-xl shadow-choose-card">
+                        <div className="flex items-center justify-start gap-5 px-4 py-4 bg-white md:max-w-[572px] w-full rounded-xl shadow-choose-card">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="68"
@@ -98,7 +98,7 @@ function Choose() {
                         </div>
                     </div>
                     <div className="flex flex-col items-stretch justify-center w-full gap-4 md:flex-row">
-                        <div className="flex items-center justify-start gap-5 px-4 py-4 bg-white max-w-[572px] w-full rounded-xl shadow-choose-card">
+                        <div className="flex items-center justify-start gap-5 px-4 py-4 bg-white md:max-w-[572px] w-full rounded-xl shadow-choose-card">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="68"
@@ -136,7 +136,7 @@ function Choose() {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex items-center justify-start gap-5 px-4 py-4 bg-white max-w-[572px] w-full rounded-xl shadow-choose-card">
+                        <div className="flex items-center justify-start gap-5 px-4 py-4 bg-white md:max-w-[572px] w-full rounded-xl shadow-choose-card">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="68"

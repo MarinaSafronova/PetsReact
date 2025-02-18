@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import AboutImg from "../../../assets/about/image.png";
 function HeroAbout() {
     return (
-        <div className="w-full relative pt-[100px] pb-10 lg:pb-24 lg:pt-[140px]">
+        <div className="w-full relative pt-[100px] pb-10 lg:pb-16 lg:pt-[140px]">
             <div className="w-full px-5 mx-auto max-w-7xl">
                 <div className="flex items-center justify-start gap-1 font-proxima text-s text-brown opacity-80">
                     <Link to="/">Home</Link>

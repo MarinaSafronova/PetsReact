@@ -42,22 +42,21 @@ function Articles() {
     return (
         <div className="pt-10 lg:pt-20 pb-14">
             <div className="w-full px-5 mx-auto max-w-7xl">
-                <div className="relative flex justify-center w-full lg:items-center max-w-[800px] mx-auto">
+               
+                <div className="relative flex justify-center w-full gap-12 lg:items-center">
                     <div className="flex items-center justify-center">
                         <img
                             src={TitleBefore}
-                            className="absolute left-0 max-w-[140px] lg:max-w-full"
+                            className="max-w-[140px] lg:max-w-full absolute left-0 lg:left-[inherit] lg:relative"
                         />
                     </div>
-                    <div className="flex flex-col items-center justify-center gap-4 lg:gap-2  absolute top-[30px] translate-x-[-50%] left-[50%] lg:top-0 lg:relative w-full min-w-[366px]  text-center lg:max-w-[100%]">
-                        <h2 className="font-sans text-3xl font-bold leading-[42px] text-primary lg:text-4xl">
-                            Latest Articles
-                        </h2>
-                    </div>
+                    <span className="text-nowrap font-bold text-3xl leading-[42px] top-[50px] lg:top-0  relative  lg:text-4xl font-sans text-center text-primary ">
+                    Latest Articles
+                    </span>
                     <div className="flex items-center justify-center">
                         <img
                             src={TitleAfter}
-                            className="absolute right-0 max-w-[140px] lg:max-w-full"
+                            className="max-w-[140px] lg:max-w-full absolute right-0 lg:right-[inherit] lg:relative"
                         />
                     </div>
                 </div>

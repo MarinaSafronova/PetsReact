@@ -15,12 +15,12 @@ function PaymentForm() {
     return (
         <div className=" bg-secondary">
             <div className="w-full max-w-6xl mx-auto md:px-2 lg:px-5">
-                <div className="flex flex-col-reverse items-center justify-center w-full gap-4 md:items-start md:flex-row">
-                    <div className="relative flex flex-col justify-between w-full h-full md:min-h-full">
+                <div className="flex flex-col-reverse items-center justify-center w-full gap-4 lg:items-start lg:flex-row">
+                    <div className="relative flex flex-col justify-between w-full h-full lg:min-h-full">
                         <div className="w-full h-full pb-16 md:pb-20 md:pt-9 ">
                             <Testimonials />
                         </div>
-                        <div className="flex mt-[auto] px-3 whitespace-nowrap relative md:px-0 md:bottom-[-300px] pt-5 items-center border-t border-white md:border-0 text-12 pb-4 justify-around md:justify-start gap-0 sm:gap-4 lg:gap-8 text-white md:leading-[36px] md:font-base font-Cerebri-Regular">
+                        <div className="flex mt-[auto] px-3 whitespace-nowrap relative md:px-0 lg:bottom-[-300px] pt-5 items-center border-t border-white lg:border-0 text-12 pb-4 justify-around md:justify-center gap-0 sm:gap-4 lg:gap-8 text-white md:leading-[36px] md:font-base font-Cerebri-Regular">
                             <p>Secure Payment</p>
                             {"|"}
                             <p>Encrypted Transactions</p>
@@ -28,9 +28,9 @@ function PaymentForm() {
                             <p>Money-Back Guarantee</p>
                         </div>
                     </div>
-                    <div className="w-full px-3 pt-4 bg-white pb-11 max-w-[606px] md:border-[0.5px] md:border-secondary">
+                    <div className="w-full px-3 pt-4 bg-white pb-11 lg:max-w-[606px] lg:border-[0.5px] lg:border-secondary">
                         <form className="w-full">
-                            <div className="flex justify-around gap-10 pb-4 border-b-[0.5px] text-secondary border-dotted border-[#937ECC]">
+                            <div className="flex justify-around gap-2 lg:gap-10 pb-4 border-b-[0.5px] text-secondary border-dotted border-[#937ECC]">
                                 <div className="flex items-center justify-start gap-2">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ function PaymentForm() {
                                             strokeLinejoin="round"
                                         />
                                     </svg>
-                                    <p className="text-lg font-Cerebri-Bold">
+                                    <p className="text-lg leading-[20px] font-Cerebri-Bold">
                                         Safe & secure{" "}
                                         <span className="font-Cerebri-Regular">
                                             {" "}
