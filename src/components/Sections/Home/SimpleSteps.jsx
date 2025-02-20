@@ -42,10 +42,9 @@ function SimpleSteps() {
                                     loading="lazy"
                                     src={Answer}
                                     alt="text"
-                                    className="object-contain max-w-full aspect-square"
+                                    className="object-contain lg:max-w-full max-w-[105px] aspect-square"
                                 />
                                 <div className="mt-3 lg:mt-8 text-4xl flex items-center justify-center font-bold text-accent whitespace-nowrap bg-primary rounded-full h-[50px]  w-[50px]">
-            
                                     <span className="font-CeraPro-Bold">1</span>
                                 </div>
                             </div>
@@ -67,16 +66,19 @@ function SimpleSteps() {
                                     loading="lazy"
                                     src={Guarantee}
                                     alt="text"
-                                    className="object-contain max-w-full aspect-square"
+                                    className="object-contain lg:max-w-full max-w-[105px]  aspect-square"
                                 />
                                 <div className="relative z-10 text-4xl mt-3 lg:mt-8  flex items-center justify-center font-bold text-accent whitespace-nowrap bg-primary rounded-full h-[50px] w-[50px]">
                                     <span className="font-CeraPro-Bold">2</span>
                                 </div>
                             </div>
                             <div className="flex flex-col text-left lg:text-center max-w-[50%] lg:max-w-[100%]">
-                                <h2 className="self-stretch mt-6 text-xl lg:text-2xl font-Cerebri-ExtraBold leading-[30px] lg:leading-[33px] ">
+                                <h2 className="lg:mt-6 text-xl leading-[30px] lg:leading-[33px] lg:text-2xl font-Cerebri-ExtraBold lg:max-w-[350px] lg:mx-auto">
                                     Get Matched with a Licensed Professional
                                 </h2>
+                                <p className="text-base lg:mt-6 font-Cerebri-Regular lg:text-22 leading-[25px] lg:leading-[33px] ">
+                                    A licensed mental health professional reviews your case. No in-person visit required.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -87,7 +89,7 @@ function SimpleSteps() {
                                     loading="lazy"
                                     src={Letter}
                                     alt="text"
-                                    className="object-contain max-w-full aspect-square"
+                                    className="object-contain lg:max-w-full max-w-[105px] aspect-square"
                                 />
                                 <div className="mt-3 lg:mt-8 text-4xl flex items-center justify-center font-bold text-accent whitespace-nowrap bg-primary rounded-full h-[50px]  w-[50px]">
                                     <span className="font-CeraPro-Bold">3</span>

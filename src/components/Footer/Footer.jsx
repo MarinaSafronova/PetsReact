@@ -11,7 +11,7 @@ function Footer() {
         <footer className="w-full px-5 bg-dark-blue">
             <div className="w-full px-5 md:px-24 pt-6 lg:pt-16 mx-auto max-w-[1420px] bg-primary rounded-t-[45px] pb-10">
                 <div className="flex flex-col gap-24">
-                    <div className="grid items-start lg:gap-4 lg:justify-between gap-y-10 gap-x-8 grid-areas-footer">
+                    <div className="grid items-start lg:gap-4 lg:justify-between gap-y-10 gap-x-4 grid-areas-footer">
                         <div className="flex items-center justify-center mb-2 text-center area-logo">
                             <Link to="/">
                                 <img
@@ -129,16 +129,16 @@ function Footer() {
                             <span className="block mb-2 text-lg font-black lg:mb-1 text-accent font-mons">
                                 As seen in
                             </span>
-                            <div className="grid items-center grid-cols-2 gap-3 mt-3 sm:grid-cols-3">
+                            <div className="relative grid items-center grid-cols-2 gap-3 mt-3 sm:grid-cols-3">
                                 <img src={Cbs} alt="Cbs" loading="lazy" />
-                                <img src={Abc} alt="Abc" loading="lazy" />
-                                <img src={Honest} alt="Honest" loading="lazy" />
-                                <img src={Forbes} alt="Forbes" loading="lazy" />
+                                <img src={Abc} alt="Abc" loading="lazy" className="md:max-w-[50px] md:mx-auto" />
+                                <img src={Honest} alt="Honest" loading="lazy" className="absolute left-[-5px] bottom-[-50px] md:bottom-[inherit] md:left-[inherit] md:relative" />
+                                <img src={Forbes} alt="Forbes" loading="lazy" className="absolute max-w-[66px] md:max-w-full right-0 bottom-[-50px] md:bottom-[inherit] md:rigth-[inherit] md:relative" />
                                 <img
                                     src={Buzz}
                                     alt="BuzzFeed"
                                     loading="lazy"
-                                    className="ml-4"
+                                    className="md:ml-4"
                                 />
                             </div>
                         </div>

@@ -13,7 +13,7 @@ const Button = ({ link }) => {
                 />
                 <div className="flex-auto w-full my-auto ml-[-40px] md:ml-0">
                     <p
-                        className="w-full h-full text-center font-bold whitespace-nowrap font-sans  text-2xl tracking-[0.5px] text focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full h-full text-center font-bold whitespace-nowrap font-sans  text-2xl tracking-[0.5px] focus:outline-none focus:ring-2 focus:ring-blue-500"
                         aria-label="Get Your ESA Letter Now"
                     >
                         {link}

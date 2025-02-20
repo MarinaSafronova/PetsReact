@@ -154,3 +154,7 @@ nav a.active {
         color: #24B2BC;
     }
 }   
+
+.overlow-topics::-webkit-scrollbar {
+    width: 1px;
+}

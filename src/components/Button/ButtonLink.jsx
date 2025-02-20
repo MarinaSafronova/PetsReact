@@ -16,10 +16,10 @@ const ButtonLink = ({ link, color,to , myClass}) => {
                     />
                     <div className="flex-auto w-full my-auto">
                         <p
-                            className={`pl-[69px] ${myClass} w-full h-full font-bold sm:whitespace-nowrap font-sans small:text-base sm:text-sm xl:text-2xl tracking-[0.5px] text focus:outline-none focus:ring-2 focus:ring-blue-500`}
+                            className={`pl-[63px] md:pl-[65px]  w-full h-full font-bold whitespace-nowrap ${myClass} font-sans text-lg sm:text-sm xl:text-2xl tracking-[0.5px] text focus:outline-none focus:ring-2 focus:ring-blue-500`}
                             aria-label="Get Your ESA Letter Now"
                         >
-                            {link}<span className="inline-block ml-2">{'>'}</span>
+                            {link}<span className="inline-block ml-1 lg:ml-2">{'>'}</span>
                         </p>
                     </div>
                 </div>

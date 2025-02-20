@@ -13,7 +13,7 @@ function CardMobile({ title, articles, category }) {
     return (
         <section>
             <div className="relative flex flex-col items-center w-full max-w-5xl mx-auto lg:px-5 small:max-w-4xl sm:max-w-4xl md:max-w-4xl">
-                <div className="flex flex-col pt-8 pb-8 mt-6 w-full bg-white rounded-3xl border-solid shadow-choose-card border-[0.5px] border-[#DBD7E8]">
+                <div className="flex flex-col pt-8 pb-8 mt-6 w-full bg-white  border-solid shadow-choose-card border-t border-l-0 border-r-0 border-b border-[0.5px] border-[#DBD7E8]">
                     <div className="relative flex justify-center w-full gap-4 lg:gap-12 lg:items-start">
                         <div className="flex items-center justify-center">
                             <img
@@ -83,7 +83,7 @@ function CardMobile({ title, articles, category }) {
                             modules={[Navigation]}
                             loop={true}
                             spaceBetween={13}
-                            className={`justify-center w-full swiper-${category} sm:w-11/12 md:w-11/12`}
+                            className={`justify-center swiper-${category} sm:w-11/12 md:w-11/12`}
                             navigation={{
                                 nextEl: `.arrow-right-${category}`,
                                 prevEl: `.arrow-left-${category}`,

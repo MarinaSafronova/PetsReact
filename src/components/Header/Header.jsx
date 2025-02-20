@@ -60,7 +60,7 @@ function Header() {
                 </Link>
                 <nav>
                     {/* Desktop Navigation */}
-                    <ul className="hidden md:flex">
+                    <ul className="hidden md:flex md:gap-1 lg:gap-5">
                         {navItems.map((item) => (
                             <NavLink
                                 key={item.id}

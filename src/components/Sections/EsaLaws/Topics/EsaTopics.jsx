@@ -158,81 +158,84 @@ const EsaTopics = () => {
     }, [filter]);
 
     return (
-        <div className="relative flex flex-col items-center w-full px-5 pb-16 mx-auto max-w-7xl">
-            <div className="flex flex-col">
-                <div className="flex flex-col gap-4 mb-5 font-sans whitespace-nowrap xl:flex-row xl:gap-0 xl:items-center text-s max-w-[36%]  sm:max-w-[60%] md:max-w-[80%] lg:max-w-full mx-auto">
-                    <div className="pl-3 font-semibold text-primary xl:pl-0">
-                        Browse by Topic:
+        <div>
+            <div className="relative flex flex-col items-center w-full px-5 mx-auto lg:pb-16 max-w-7xl">
+                <div className="flex flex-col">
+                    <div className="flex flex-col gap-4 mb-5 font-sans whitespace-nowrap xl:flex-row xl:gap-0 xl:items-center text-s max-w-[36%]  sm:max-w-[60%] md:max-w-[80%] lg:max-w-full mx-auto">
+                        <div className="pl-3 font-semibold text-primary xl:pl-0">
+                            Browse by Topic:
+                        </div>
+                        <div className="overlow-topics flex items-center ml-3 font-medium text-center justify-between gap-1 lg:gap-2 text-brown min-h-[60px] xl:min-h-[auto]  overflow-x-scroll lg:overflow-x-visible ">
+                            <div
+                                onClick={() => setFilter("all")}
+                                className={`flex justify-center px-3 cursor-pointer ${
+                                    filter === "all"
+                                        ? "active-tab"
+                                        : "opacity-50 "
+                                } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
+                            >
+                                All Topic
+                            </div>
+                            <div
+                                onClick={() => setFilter("esa-basic")}
+                                className={`flex  justify-center px-3 cursor-pointer ${
+                                    filter === "esa-basic"
+                                        ? "active-tab"
+                                        : "opacity-50 "
+                                } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
+                            >
+                                ESA Basic
+                            </div>
+                            <div
+                                onClick={() => setFilter("esa-rights")}
+                                className={`flex justify-center px-3 cursor-pointer ${
+                                    filter === "esa-rights"
+                                        ? "active-tab"
+                                        : "opacity-50 "
+                                } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
+                            >
+                                Housing & ESA Rights
+                            </div>
+                            <div
+                                onClick={() => setFilter("esa-traveling")}
+                                className={`flex justify-center px-3 cursor-pointer ${
+                                    filter === "esa-traveling"
+                                        ? "active-tab"
+                                        : "opacity-50 "
+                                } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
+                            >
+                                Traveling with Your ESA
+                            </div>
+                            <div
+                                onClick={() => setFilter("esa-letter")}
+                                className={`flex justify-center px-3 cursor-pointer ${
+                                    filter === "esa-letter"
+                                        ? "active-tab"
+                                        : "opacity-50 "
+                                } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
+                            >
+                                ESA Letters & Process
+                            </div>
+                            <div
+                                onClick={() => setFilter("esa-mental")}
+                                className={`flex justify-center px-3 cursor-pointer ${
+                                    filter === "esa-mental"
+                                        ? "active-tab"
+                                        : "opacity-50 "
+                                } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
+                            >
+                                Mental Health & Well-Being
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex items-center ml-3 font-medium text-center justify-between gap-1 lg:gap-2 text-brown min-h-[60px] xl:min-h-[auto]  overflow-x-scroll lg:overflow-x-visible ">
-                        <div
-                            onClick={() => setFilter("all")}
-                            className={`flex justify-center px-3 cursor-pointer ${
-                                filter === "all" ? "active-tab" : "opacity-50 "
-                            } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
-                        >
-                            All Topic
-                        </div>
-                        <div
-                            onClick={() => setFilter("esa-basic")}
-                            className={`flex  justify-center px-3 cursor-pointer ${
-                                filter === "esa-basic"
-                                    ? "active-tab"
-                                    : "opacity-50 "
-                            } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
-                        >
-                            ESA Basic
-                        </div>
-                        <div
-                            onClick={() => setFilter("esa-rights")}
-                            className={`flex justify-center px-3 cursor-pointer ${
-                                filter === "esa-rights"
-                                    ? "active-tab"
-                                    : "opacity-50 "
-                            } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
-                        >
-                            Housing & ESA Rights
-                        </div>
-                        <div
-                            onClick={() => setFilter("esa-traveling")}
-                            className={`flex justify-center px-3 cursor-pointer ${
-                                filter === "esa-traveling"
-                                    ? "active-tab"
-                                    : "opacity-50 "
-                            } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
-                        >
-                            Traveling with Your ESA
-                        </div>
-                        <div
-                            onClick={() => setFilter("esa-letter")}
-                            className={`flex justify-center px-3 cursor-pointer ${
-                                filter === "esa-letter"
-                                    ? "active-tab"
-                                    : "opacity-50 "
-                            } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
-                        >
-                            ESA Letters & Process
-                        </div>
-                        <div
-                            onClick={() => setFilter("esa-mental")}
-                            className={`flex justify-center px-3 cursor-pointer ${
-                                filter === "esa-mental"
-                                    ? "active-tab"
-                                    : "opacity-50 "
-                            } hover:text-purple hover:opacity-100 transition-all items-center min-h-[35px]`}
-                        >
-                            Mental Health & Well-Being
-                        </div>
-                    </div>
+                    <img
+                        loading="lazy"
+                        src={Arrow}
+                        alt=""
+                        className="object-contain absolute z-10 self-center top-28 xl:mt-7 xl:top-10 w-2.5 aspect-[0.18]"
+                    />
                 </div>
-                <img
-                    loading="lazy"
-                    src={Arrow}
-                    alt=""
-                    className="object-contain absolute z-10 self-center top-28 xl:mt-7 xl:top-10 w-2.5 aspect-[0.18]"
-                />
-            </div>
-            <div className="hidden lg:block">
+                <div className="hidden lg:block">
                     {filteredPortfolio.map((topic, index) => (
                         <Card
                             key={index}
@@ -241,7 +244,9 @@ const EsaTopics = () => {
                         />
                     ))}
                 </div>
-                <div className="w-full lg:hidden">
+
+            </div>
+            <div className="w-full lg:hidden">
                     {filteredPortfolio.map((topic, index) => (
                         <CardMobile
                             key={index}

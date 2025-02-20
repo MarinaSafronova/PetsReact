@@ -45,7 +45,7 @@ function WithoutESA() {
                             <div className="flex flex-col mt-3">
                                 {leftConditions.map((condition, index) => (
                                     <div
-                                        className="flex items-center gap-2.5 lg:mb-1"
+                                        className="flex items-center gap-2.5 lg:mb-2"
                                         key={index}
                                     >
                                         <img
@@ -54,7 +54,7 @@ function WithoutESA() {
                                             className="object-contain aspect-[1.73] w-[20px] h-[20px]"
                                             alt=""
                                         />
-                                        <span className="text-s md:text-sm lg:mb-1 leading-[33px] text-brown font-Cerebri-Medium">
+                                        <span className="text-s lg:text-sm  leading-[33px] text-brown font-Cerebri-Medium">
                                             {condition}
                                         </span>
                                     </div>
@@ -70,7 +70,7 @@ function WithoutESA() {
                             <div className="flex flex-col mt-3">
                                 {rightConditions.map((condition, index) => (
                                     <div
-                                        className="flex items-center gap-2.5 lg:mb-1"
+                                        className="flex items-center gap-2.5 lg:mb-2"
                                         key={index}
                                     >
                                         <img
@@ -79,7 +79,7 @@ function WithoutESA() {
                                             className="object-contain aspect-[1.73] w-[20px] h-[20px]"
                                             alt=""
                                         />
-                                        <span className="text-s md:text-sm leading-[33px] lg:mb-1 text-brown font-Cerebri-Medium">
+                                        <span className="text-s lg:text-sm leading-[33px] text-brown font-Cerebri-Medium">
                                             {condition}
                                         </span>
                                     </div>

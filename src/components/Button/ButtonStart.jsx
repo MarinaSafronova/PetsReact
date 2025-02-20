@@ -16,7 +16,7 @@ const ButtonLink = ({ link,  color, to }) => {
                     />
                     <div className="flex-auto w-full my-auto">
                         <p
-                            className="pl-[76px] text-center w-full  h-full font-bold whitespace-nowrap font-sans  text-2xl tracking-[0.5px] text focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="pl-[55px] text-center w-full  h-full font-bold whitespace-nowrap font-sans  text-2xl tracking-[0.5px] text focus:outline-none focus:ring-2 focus:ring-blue-500"
                             aria-label="Get Your ESA Letter Now"
                         >
                             {link}<span className="inline-block ml-2">{'>'}</span>

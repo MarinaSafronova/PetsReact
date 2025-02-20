@@ -71,16 +71,16 @@ function Content() {
         },
     ];
     return (
-        <div className="w-full pt-12 pb-14 lg:pb-24 lg:pt-4">
-            <div className="relative w-full max-w-6xl px-5 pb-2 mx-auto">
+        <div className="w-full pt-5 pb-14 lg:pb-24 lg:pt-4">
+            <div className="relative w-full px-4 pb-2 mx-auto md:px-10 lg:pl-20 max-w-7xl">
                 <img
                     loading="lazy"
                     src={Arrow}
                     alt=""
-                    className="object-contain aspect-[0.19] w-[13px] absolute left-[50%] translate-x-[-50%] lg:translate-x-[0] top-[-80px] lg:top-[-80px] lg:left-20 z-20"
+                    className="object-contain aspect-[0.19] w-[13px] absolute left-[50%] translate-x-[-50%] lg:translate-x-[0] top-[-85px] lg:top-[-80px] lg:left-20 z-20"
                 />
 
-                <div className="flex flex-col justify-start gap-12 max-w-[1062px] lg:pl-6">
+                <div className="flex flex-col justify-start gap-12">
                     <p className="font-Cerebri-SemiBold leading-[32px] lg:leading-[42px] text-sm lg:text-26 text-[#0F2B2E]">
                         If your pet brings you comfort and helps ease anxiety,
                         stress, or other emotional challenges, you may qualify
@@ -149,18 +149,18 @@ function Content() {
                                 well-being, an ESA letter gives you the legal
                                 protection you need to keep them by your side.
                             </p>
-                            <div className="max-w-[343px] sm:max-w-full">
+                            <div className=" sm:max-w-full">
                                 <ButtonLink
-                                    link="Start Your ESA Evaluation Today"
+                                    link={`Start Your ESA Evaluation Today`}
                                     color="text-primary"
-                                    myClass="text-left"
+                                    myClass="text-left !whitespace-normal"
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="relative flex flex-col items-center w-full px-5 mx-auto max-w-7xl">
+            <div className="relative flex flex-col items-center w-full mx-auto lg:px-5 max-w-7xl">
                 <div className="flex flex-col w-full">
                     <div className="hidden lg:block">
                         {topics.map((topic, index) => (

@@ -1,4 +1,4 @@
-import { Link, useNavigate} from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useState, useEffect } from "react";
 import TitleBefore from "../../assets/trust-before.svg";
 import TitleAfter from "../../assets/trust-after.svg";
@@ -19,10 +19,10 @@ function CheckoutStart() {
     };
 
     useEffect(() => {
-        if (selectedOption){
-           return navigate("/checkout2");
+        if (selectedOption) {
+            return navigate("/checkout2");
         }
-     },[handleOptionChange]);
+    }, [handleOptionChange]);
 
     return (
         <div className="flex flex-col w-full gap-4 px-4 bg-white lg:px-14 bg-[url('assets/checkout/cloud-mobile.svg')] md:bg-none bg-no-repeat bg-[center_bottom]">
@@ -67,9 +67,9 @@ function CheckoutStart() {
                     <div className="flex flex-col px-8 pt-3.5 pb-7   md:max-w-[384px] w-full h-[97px] bg-white rounded-2xl shadow-[-12px_4px_45px_rgba(0,0,0,0.1)]">
                         <div className="flex flex-col w-full gap-4">
                             <div className="flex items-center justify-between w-full gap-2">
-                                <div className="flex gap-2">
-                                    <div className="flex items-center justify-center  text-13 font-Cerebri-SemiBold leading-3 text-white whitespace-nowrap bg-primary rounded-full h-[26px] w-[26px]">
-                                        <span>1</span>
+                                <div className="flex items-center gap-2">
+                                    <div className="flex items-center justify-center  text-13 leading-[13px] font-Cerebri-SemiBold text-white whitespace-nowrap bg-primary rounded-full h-[26px] w-[26px]">
+                                        1
                                     </div>
                                     <div className="leading-9 text-s font-Cerebri-Bold text-primary basis-auto">
                                         You are 20% closer
@@ -108,16 +108,16 @@ function CheckoutStart() {
                     </p>
                     <div className="flex flex-col gap-6 max-w-[434px] w-full">
                         {options.map((option) => (
-                            <div
+                            <label
+                                htmlFor={option.id}
                                 key={option.id}
-                                className={`${selectedOption === option.id ? "bg-secondary border-secondary text-white": " bg-white text-brown"} flex gap-5 group justify-between items-center px-9 py-5 w-full border-2 border-[#635D7E] h-[60px] md:h-[70px]  border-solid rounded-[35px] cursor-pointer hover:text-white hover:bg-secondary peer-checked:bg-secondary`}
+                                className={`${
+                                    selectedOption === option.id
+                                        ? "bg-secondary border-secondary text-white"
+                                        : " bg-white text-brown"
+                                } flex gap-5 group justify-between mt-px  group-hover:text-white hover:cursor-pointer  font-sans font-bold text-22 md:text-2xl tracking-[0.5px] peer-checked:text-white items-center px-9 py-5 w-full border-2 border-[#635D7E] h-[60px] md:h-[70px]  border-solid rounded-[35px] cursor-pointer hover:text-white hover:bg-secondary peer-checked:bg-secondary`}
                             >
-                                <label
-                                    className={`mt-px inline-block  pl-[0.15rem] group-hover:text-white hover:cursor-pointer  font-sans font-bold text-22 md:text-2xl tracking-[0.5px] peer-checked:text-white`}
-                                    htmlFor={option.id}
-                                >
-                                    {option.label}
-                                </label>
+                                {option.label}
                                 <input
                                     className="relative peer  -ml-[1.5rem] mr-1 mt-0.5 h-[28px] w-[28px] appearance-none rounded-full border-2 border-solid group-hover:border-white border-[#635D7E] before:pointer-events-none before:absolute before:h-[28px] before:w-[28px] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:content-[''] after:absolute after:z-[1] after:block after:h-[28px] after:w-[28px] after:rounded-full after:content-[''] checked:border-white checked:before:opacity-[0.16] checked:after:absolute checked:after:left-1/2 checked:after:top-1/2 checked:after:translate-x-[-50%] checked:after:translate-y-[-50% ] checked:after:h-[0.625rem] checked:after:w-[0.625rem] checked:after:rounded-full checked:after:border-white checked:after:bg-white checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] hover:cursor-pointer hover:before:opacity-[0.04] focus:shadow-none focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:border-white checked:focus:before:scale-100 checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:border-neutral-600 dark:checked:border-primary dark:checked:after:border-primary dark:checked:after:bg-primary  dark:checked:focus:border-primary "
                                     type="radio"
@@ -127,7 +127,7 @@ function CheckoutStart() {
                                     checked={selectedOption === option.id}
                                     onChange={handleOptionChange}
                                 />
-                            </div>
+                            </label>
                         ))}
                     </div>
                 </div>
